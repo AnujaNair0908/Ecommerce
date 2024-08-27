@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LensLedger</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7Q3rZ+5/M4j29hb4eo/0zzr1yT7Bzv5JOsm//4pXlrz1F2X17c5Y5J5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to <strong>LensLedger</strong>, your premier destination for buying and selling high-quality photographs. Our platform is designed to connect photographers and photo enthusiasts from around the world, providing a seamless and secure marketplace for stunning visual content.</p>
+
+        <h2>Who We Are</h2>
+        <p>At <strong>LensLedger</strong>, we are passionate about photography. Our team comprises seasoned professionals and avid photo lovers dedicated to celebrating the art and craft of capturing moments. We believe that every photograph tells a unique story, and we are committed to providing a platform where these stories can be shared and appreciated.</p>
+
+        <h2>What We Offer</h2>
+        <h3>For Buyers:</h3>
+        <p>Explore a vast collection of photographs across various genres, from breathtaking landscapes and vibrant street scenes to intimate portraits and abstract art. Whether you are looking for images to enhance your personal projects, decorate your space, or for commercial use, you will find a diverse array of high-resolution photos that cater to your needs. Our user-friendly interface makes it easy to search, preview, and purchase photos, ensuring a hassle-free experience.</p>
+
+        <h3>For Sellers:</h3>
+        <p>Turn your passion for photography into profit by joining our community of talented photographers. Upload, manage, and sell your photos through our secure platform. With our global reach, you can showcase your work to a wide audience, gain exposure, and earn a fair commission for every sale. We provide all the tools and support you need to succeed, from easy uploading to detailed analytics.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to democratize access to high-quality photography. We strive to create a vibrant, supportive community where photographers can showcase their work and buyers can find the perfect images to meet their needs. We are committed to fostering creativity, promoting talent, and ensuring that every transaction is fair and transparent.</p>
+
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li><strong>Quality Assurance:</strong> Every photograph on our platform is carefully curated to meet our high standards of quality and originality.</li>
+            <li><strong>Secure Transactions:</strong> We prioritize your security and privacy, offering safe and reliable payment options.</li>
+            <li><strong>Global Community:</strong> Join a diverse network of photographers and buyers from around the world, expanding your reach and inspiration.</li>
+            <li><strong>Customer Support:</strong> Our dedicated support team is here to help you with any questions or issues, ensuring a smooth and enjoyable experience.</li>
+        </ul>
+
+        <p>Thank you for choosing <strong>LensLedger</strong>. Whether you are here to buy or sell photographs, we are excited to be part of your creative journey. Join us today and discover a world of beautiful images waiting to be explored.</p>
+    </div>
+    <h3 style="text-align: center; "> More From our photographers</h3>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slide active">
+            <img src="slide1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="slide2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="slide3.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="slide5.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="slide6.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="slide4.jpg" alt="Image 3">
+        </div>
+        
+    </div>
+
+    <!-- Slider Navigation -->
+    <div class="slider-nav">
+        <button class="prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+        <button class="next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(n) {
+            slides.forEach((slide) => slide.classList.remove('active'));
+            slides[n].classList.add('active');
+        }
+        
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }
+        
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlide(slideIndex);
+        }
+    </script>
+</body>
+</html>

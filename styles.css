@@ -1,0 +1,255 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color:rgba(120, 69, 18, 0.866);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+   
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #f4f4f4;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-grid img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+#cart-items .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items .cart-item:last-child {
+    border-bottom: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.home-section {
+    background-image: url('E:/lensledger/ngallery.jpg'); /* Update this path to your welcome image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.welcome-content {
+    background-color:rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.add{
+        background-color:#A0522D ;
+        color: white;
+        height: 34px;
+        width: 104px;
+        cursor: pointer;
+        border-radius: 2px;
+        margin-right: 8px;
+        transition: opacity 0.15s;
+    }
+    .add:hover{
+        opacity: 0.7;
+    }
+    .add:active{
+        background-color: indianred;
+    }
+.login{
+    font-family: Arial, sans-serif;
+    color: black;
+        top:05%;
+        left:90%;
+        width:90px;
+        height:40px;
+        position: absolute;
+        cursor: pointer;
+        border-radius: 30px;
+        z-index: 2;
+        background:bisque; 
+        text-decoration: none;
+        text-align: center;
+        font-style:normal;
+        font-size: large;
+        font-weight: 100;
+        
+}
+.login:hover{
+    opacity: 0.7;
+}
+.login:active{
+    background-color: indianred;
+}
+
+.sigin{
+    top:05%;
+    left:80%;
+    width:90px;
+    height:40px;
+    cursor: pointer;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 2;
+    background: bisque; 
+    text-decoration: none;
+    color: black;
+    text-align: center;
+        font-style:normal;
+        font-size: large;
+        font-weight: 100;
+    
+}
+.sigin:hover{
+    opacity: 0.7;
+}
+.sigin:active{
+    background-color: indianred;
+}
+button, .button {
+
+    background-color:sienna;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+button:hover, .button:hover {
+    background-color:darksalmon;   
+}
+*{
+    box-sizing:border-box;
+    outline:none;
+  }
+  body.gallery-page {
+    background-color: beige;
+}
+.about{
+    text-align: center;
+    text-decoration: dotted;
+    text-shadow: 21cm;
+    color: black;
+}
+.square{
+      top: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #ddd;
+      line-height: 2;
+      width: 900px;
+      height: 300px;
+      font-family: cursive, sans-serif;
+      font-size: 1.3rem;
+      font-weight: bolder;
+      font-style: italic;
+      justify-content: center;
+      background-color:antiquewhite;
+
+}
+.footer {
+    width: 100%;
+    height: 100px; /* Adjust the height as needed */
+    background-image: url('E:/lensledger/footblack.jpg'); /* Update this path to your welcome image */
+    background-size: cover; /* Ensures the background covers the entire div */
+    background-position: center; /* Centers the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color for visibility */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Padding for inner content */
+}
+
+.footer-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: dashed; /* Dashed underline */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.footer-link:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Lighter background on hover */
+}
+.pic1{
+    color: black;
+    text-align: center;
+    text-shadow: #ddd;
+}
+.container{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px; 
+}
